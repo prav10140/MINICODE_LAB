@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    
+    <nav>
+        <div class="nav-content">
+            <div class="logo">PythonHub</div>
+            <div class="nav-links">
+                <a href="#examples">Examples</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="nav-buttons">
+                <a href="#examples" class="cta-button">Explore Examples</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Python Learning Infrastructure for the next generation</h1>
+            <p>Explore 40 interactive Python code examples to enhance your programming skills.</p>
+            <a href="#examples" class="cta-button">Explore Examples</a>
+        </div>
+        <div class="hero-image">
+            <div class="code-preview">
+                <pre><code class="language-python">def welcome():
+    print("Welcome to PythonHub!")
+    
+welcome()</code></pre>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="examples" class="examples-grid">
+            <h2>Python Code Examples</h2>
+            <div class="examples-container" id="examplesContainer">
+                <!-- Examples will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="feature-card">
+                <h3>40 Interactive Examples</h3>
+                <p>Learn from a wide range of Python code snippets</p>
+            </div>
+            <div class="feature-card">
+                <h3>Copy with One Click</h3>
+                <p>Easily copy code examples to use in your projects</p>
+            </div>
+            <div class="feature-card">
+                <h3>Beginner to Advanced</h3>
+                <p>Progress through examples of varying difficulty</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PythonHub</h4>
+                <p>Empowering developers with interactive Python examples.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#examples">Examples</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="exampleModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <pre><code id="modalCode" class="language-python"></code></pre>
+            <button id="copyButton" class="cta-button">Copy Code</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
